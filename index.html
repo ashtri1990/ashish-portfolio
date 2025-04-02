@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish Tripathi - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ecf0f1;
+            color: #333;
+            transition: background-color 0.5s ease;
+        }
+        header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #1abc9c;
+        }
+        section {
+            padding: 40px;
+            background: white;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s forwards ease-in-out;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h2 {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+        .gallery img {
+            width: 100px;
+            height: auto;
+            margin: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ashish Tripathi</h1>
+        <p>Sr. Manager - Project Delivery</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a class="btn" href="Resume_Ashish_Tripathi_3.pdf" download>Download Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Dynamic professional with over 7 years of experience in project delivery, strategic planning, and business transformation. Passionate about optimizing processes and driving measurable results in complex environments.</p>
+    </section>
+    
+    <section id="interests">
+        <h2>Interests</h2>
+        <p>Passionate about traveling, reading, music, and sports.</p>
+        
+        <h3>Books I Own</h3>
+        <ul>
+            <li>The Lean Startup - Eric Ries</li>
+            <li>Thinking, Fast and Slow - Daniel Kahneman</li>
+            <li>Zero to One - Peter Thiel</li>
+            <li>Good to Great - Jim Collins</li>
+            <li>The Hard Thing About Hard Things - Ben Horowitz</li>
+        </ul>
+        
+        <h3>Travel Photography</h3>
+        <div class="gallery">
+            <img src="images/travel1.jpg" alt="Mountain View">
+            <img src="images/travel2.jpg" alt="Beach Sunset">
+            <img src="images/travel3.jpg" alt="City Skyline">
+            <img src="images/travel4.jpg" alt="Forest Trail">
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:ashish14962@gmail.com">ashish14962@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ashish-tripathi-0b447036">Ashish Tripathi</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Ashish Tripathi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
